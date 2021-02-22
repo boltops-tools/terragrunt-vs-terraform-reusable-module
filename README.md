@@ -7,7 +7,7 @@ These example projects explain how terragrunt and terraform/terraspace handle cr
 This may also helps folks migrating from terragrunt to terraspace and using the same original state files.
 
 Though a greenfield terraspace project is a lot cleaner, it's not always possible.
-You may also want to consider migrating by copy each module's state file being migrated. This allows you to get rid of legacy artifacts. However, this approach is not sometimes possible.
+You may also want to consider migrating by copy each module's state file being migrated. This allows you to get rid of legacy artifacts. However, this approach is sometimes not possible.
 
 ## Files Summary
 
