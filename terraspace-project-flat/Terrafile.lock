@@ -1,0 +1,7 @@
+---
+demo:
+  source: git@github.com:tongueroo/pet
+  export_to: app/stacks
+  type: git
+  url: https://github.com/git@github.com:tongueroo/pet
+  sha: 951bb7ba09304372c3fbcd24a81ea5d24c45e61a
