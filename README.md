@@ -15,7 +15,7 @@ Here's a summary of the files in this repo. Please read the **entire** README an
 
 Name | Description | Terraform Resource Name
 ---|---|---
-[terragrunt-project/dev/demo](terragrunt-project/dev/demo) | The "dev demo" terragrunt project that creates a random pet. Terragrunt creates "flattened" resource names. The key files in this folder are [main.tf](terragrunt-project/dev/demo/main.tf) and [terragrunt.hcl](terragrunt-project/dev/demo/terragrunt.hcl). | random_pet.pet1
+[terragrunt-project/dev/demo](terragrunt-project/dev/demo) | The "dev demo" terragrunt project that creates a random pet. Terragrunt creates "flattened" resource names. The key file in this folder is [terragrunt.hcl](terragrunt-project/dev/demo/terragrunt.hcl). | random_pet.pet1
 [terraspace-project/app/stacks/demo](terraspace-project/app/stacks/demo) | The "demo" terraspace stack that creates a random pet using the `module` keyword. Since this project uses the terraform `module` keyword it'll create a hierarchical resource name. The key file in this folder is [main.tf](terraspace-project/app/stacks/demo/main.tf). | module.pet1.random_pet.pet
 [terraspace-project-flat/app/stacks/demo](terraspace-project-flat/app/stacks/demo) | The "demo" terraspace stack creates a random pet directly. This creates the same "flattened" terragrunt resource name structure. And is the key to allowing you to use the **same statefiles**.  The key file in this folder is [main.tf](terraspace-project-flat/app/stacks/demo/main.tf).  | random_pet.pet1
 
