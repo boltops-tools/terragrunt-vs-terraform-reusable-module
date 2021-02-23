@@ -1,3 +1,3 @@
-module "pet1" {
+module "pet" {
   source     = "../../modules/pet"
 }
