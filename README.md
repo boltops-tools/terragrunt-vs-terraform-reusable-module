@@ -4,10 +4,9 @@ These example projects explain how terragrunt and terraform/terraspace handle cr
 
 * [Migrating from terragrunt - Root modules?](https://community.boltops.com/t/migrating-from-terragrunt-root-modules/627)
 
-This may also helps folks migrating from terragrunt to terraspace and using the same original state files.
+This may also help folks migrating from terragrunt to terraspace and using the same original state files.
 
-Though a greenfield terraspace project is a lot cleaner, it's not always possible.
-You may also want to consider migrating by copy each module's state file being migrated. This allows you to get rid of legacy artifacts. However, this approach is sometimes not possible.
+Though a greenfield terraspace project is a lot cleaner, it's not always possible. You might also want to consider migrating by copy each module's state file one at a time. This allows you to get rid of legacy artifacts. Again, this approach is sometimes not possible.
 
 ## Files Summary
 
@@ -21,7 +20,7 @@ Name | Description | Terraform Resource Name
 
 Notes:
 
-* Both terraspace project examples, make use of Terrafile to source in the modules.
+* Both terraspace project examples make use of Terrafile to source in the modules.
 * You can use the `module source` field if you're using `terraform module` keyword to reuse modules.
 * But for the flattened structure that creates a "flattened" resource name like Terragrunt, you have to use Terrafile to reuse module code.
 
@@ -267,7 +266,7 @@ This is the **same** flattened structure that the terragrunt `terraform` customi
     $
 </details>
 
-This demonstrates that the mirrored tfvars structure is also possible with Terraspace. We're using seed here that jives more with the way Terragrunt works. Think it's clearer to put the tfvars files `app/modules/demo/tfvars` though. However, you have options.
+This demonstrates that the mirrored tfvars structure is also possible with Terraspace. We're putting the tfvars files in the seed folder here because a mirrored tfvars structure is likely more familiar for Terragrunt users. However, think it's clearer to put the tfvars files in `app/modules/demo/tfvars`. You have options.
 
 ## Concluding Thoughts: Pros and Cons
 
@@ -276,4 +275,4 @@ The devil is in the details, we have to go pretty deep into the weeds to see the
 * The advantage with Terragrunt's custom HCL syntax is that it produces a nice flattened resource name structure. This is nicer because it's "simpler". You don't have to "daisy-chain" variable inputs as much.
 * The advantage of terraform's `module` keyword is that it's native. It's already built-in. The native module syntax also creates a hierarchical resource name. This nicer because it's more "organized".
 
-Think that sometimes a custom syntax is worth it, it depends on the value add. DSLs are worth it when they provide enough pros. Now that the terraform `module` keyword is available though, think it's no longer worth it. The terragrunt custom HCL syntax conflates things.
+Think that sometimes a custom syntax is worth it; it depends on the value add. DSLs are worth it when they provide enough pros. Now that the terraform `module` keyword is available though, think it's no longer worth it. The terragrunt custom HCL syntax conflates things.
