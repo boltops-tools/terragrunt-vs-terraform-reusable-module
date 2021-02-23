@@ -2,7 +2,6 @@
 demo:
   source: git@github.com:tongueroo/pet
   export_to: app/stacks
-  branch: flat
   type: git
   url: https://github.com/git@github.com:tongueroo/pet
-  sha: f6b755ba79a6de637b0b89645af888f77447fddc
+  sha: f389caad2ee8c520e94158424c35dd8c51ca31e1
