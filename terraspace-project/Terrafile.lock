@@ -3,4 +3,4 @@ pet:
   source: git@github.com:tongueroo/pet
   type: git
   url: https://github.com/git@github.com:tongueroo/pet
-  sha: 951bb7ba09304372c3fbcd24a81ea5d24c45e61a
+  sha: 4416abbf989e5c01bcd58cd0ea859f074246dc19

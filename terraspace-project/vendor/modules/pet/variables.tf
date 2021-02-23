@@ -1,1 +1,4 @@
-# This is where you put your variables declaration
+variable "length" {
+  type    = number
+  default = 2
+}
