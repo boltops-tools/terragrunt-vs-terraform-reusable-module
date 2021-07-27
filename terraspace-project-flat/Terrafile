@@ -14,4 +14,4 @@
 # mod "sqs", source: "terraform-aws-modules/sqs/aws"
 
 # base_clone_url "git@github.com:"  # override the default https://github.com/
-mod "demo", source: "git@github.com:tongueroo/pet", export_to: "app/stacks"
+mod "demo", source: "https://github.com/tongueroo/pet", export_to: "app/stacks"
